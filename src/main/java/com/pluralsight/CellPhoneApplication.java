@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CellPhoneApplication {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("What is the serial number? ");
+        System.out.println("What is the serial number? ");
         Cellphone serial_number = new Cellphone();
         serial_number.setSerialNumber(scanner.nextLine());
 
@@ -34,7 +34,7 @@ public class CellPhoneApplication {
         System.out.println(serial_number.getSerialNumber());
         System.out.println(model.getModel());
         System.out.println(carrier.getCarrier());
-        System.out.println(String.join(phoneNumber.getPhoneNumber(),"-"));
+        System.out.println(phoneNumber.getPhoneNumber());
         System.out.println(owner.getOwner());
     }
 }
