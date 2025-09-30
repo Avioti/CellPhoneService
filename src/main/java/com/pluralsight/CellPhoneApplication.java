@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CellPhoneApplication {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("What is the serial number? ");
+        System.out.print("What is the serial number? ");
         Cellphone serial_number = new Cellphone();
         serial_number.setSerialNumber(scanner.nextLine());
 
