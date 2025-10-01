@@ -4,14 +4,20 @@ import java.util.Scanner;
 
 public class CellPhoneApplication {
     public static void main(String[] args) {
-
+        cell3.setOwner("jalen");
+        cell3.setPhoneNumber("389-482-9075");
+        cell3.setCarrier("At&t");
+        cell3.setModel("Iphone");
+        cell3.setSerialNumber(38975938);
+    display(cell3);
         Cellphone cell1 = cellphone();
         Cellphone cell2 = cellphone();
-    display(cell1);
-    display(cell2);
+        display(cell1);
+        display(cell2);
 
-       cell1.dial(cell2);
-       cell2.dial(cell1);
+        cell1.dial(cell2);
+        cell2.dial(cell1);
+        cell2.dial(cell3.getPhoneNumber());
 
     }
 
@@ -56,5 +62,7 @@ return information;
         System.out.println("PhoneNumber = " + phone.getPhoneNumber());
         System.out.println("Owner = " + phone.getOwner());
     }
+
+    static Cellphone cell3 = new Cellphone(384983, "test", "test", "phonenumber", "owner");
 
 }
