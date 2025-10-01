@@ -58,4 +58,12 @@ public class Cellphone {
     public void setOwner(String i){
         this.owner = i;
     }
+
+    public void dial(Cellphone cellphone){
+        System.out.println(getOwner() + "'s phone is calling " + cellphone.getPhoneNumber());
+    }
+
+
+
+
 }
