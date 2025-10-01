@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class CellPhoneApplication {
     public static void main(String[] args) {
 
-        Cellphone cell1 = cellphone1();
-        Cellphone cell2 = cellphone2();
+        Cellphone cell1 = cellphone();
+        Cellphone cell2 = cellphone();
     display(cell1);
     display(cell2);
 
@@ -17,7 +17,7 @@ public class CellPhoneApplication {
 
 
 
-    public static Cellphone cellphone1(){
+    public static Cellphone cellphone(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("What is the serial number? ");
         Cellphone information = new Cellphone();
@@ -45,34 +45,7 @@ return information;
 
 
     }
-    public static Cellphone cellphone2(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("What is the serial number? ");
-        Cellphone information = new Cellphone();
-        information.setSerialNumber(scanner.nextInt());
 
-
-        System.out.print("What model is the phone? ");
-        information.setModel(scanner.next());
-
-
-        System.out.print("Who is the carrier? ");
-        information.setCarrier(scanner.next());
-
-
-        System.out.print("What is the phone number? ");
-        information.setPhoneNumber(scanner.next());
-
-
-        System.out.print("Who is the owner of the phone? ");
-        information.setOwner(scanner.next());
-
-        return information;
-
-
-
-
-    }
 
     public static void display(Cellphone phone){
 
